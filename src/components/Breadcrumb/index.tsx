@@ -4,12 +4,13 @@ import BreadcrumbItem from "./BreadcrumbItem";
 
 const Breadcrumb: FC<{}> = () => {
   return (
-    <nav className="text-black font-bold my-8" aria-label="Breadcrumb">
-      <ol className="list-none p-0 inline-flex">
-        <BreadcrumbItem title={"Home"} to="/" hasArrow={true} />
-        <BreadcrumbItem title={"About"} to="/" hasArrow={true} />
-        <BreadcrumbItem title={"Info"} to="/" hasArrow={false} />
-      </ol>
+    <nav
+      className="hidden sm:flex items-center text-sm leading-5 font-medium"
+      aria-label="Breadcrumb"
+    >
+      <BreadcrumbItem title={"Home"} to="/" />
+      <BreadcrumbItem title={"About"} to="/" />
+      <BreadcrumbItem title={"Info"} to="/" hasArrow={false} />
     </nav>
   );
 };
