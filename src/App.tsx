@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 
 import './App.css';
+import "./assets/main.css";
 
 const App = () => (
   <Switch>

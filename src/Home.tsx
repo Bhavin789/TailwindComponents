@@ -1,32 +1,35 @@
-import React from 'react';
-import logo from './react.svg';
+import React from "react";
 
-import './Home.css';
+import arrow from "./arrow.svg";
+
+import { Link } from "react-router-dom";
+
+import "./Home.css";
 
 class Home extends React.Component<{}, {}> {
   public render() {
     return (
-      <div className="Home">
-        <div className="Home-header">
-          <img src={logo} className="Home-logo" alt="logo" />
-          <h2>Welcome to Razzles</h2>
-        </div>
-        <p className="Home-intro">
-          To get started, edit <code>src/App.tsx</code> or{' '}
-          <code>src/Home.tsx</code> and save to reload.
-        </p>
-        <ul className="Home-resources">
-          <li>
-            <a href="https://github.com/jaredpalmer/razzle">Docs</a>
+      <nav className="text-black font-bold my-8" aria-label="Breadcrumb">
+        <ol className="list-none p-0 inline-flex">
+          <li className="flex items-center">
+            <Link to="/">Home</Link>
+            <span className="fill-current w-3 h-3 mx-3">
+              <img src={arrow} alt={arrow} />
+            </span>
+          </li>
+          <li className="flex items-center">
+            <Link to="/">Info</Link>
+            <span className="fill-current w-3 h-3 mx-3">
+              <img src={arrow} alt={arrow} />
+            </span>
           </li>
           <li>
-            <a href="https://github.com/jaredpalmer/razzle/issues">Issues</a>
+            <Link to="/" className="text-gray-500" aria-current="page">
+              About
+            </Link>
           </li>
-          <li>
-            <a href="https://palmer.chat">Community Slack</a>
-          </li>
-        </ul>
-      </div>
+        </ol>
+      </nav>
     );
   }
 }
