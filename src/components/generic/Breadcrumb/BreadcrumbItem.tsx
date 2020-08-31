@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
-import { BreadcrumbItemProps } from "../../typings/ui/components/Breadcrumb";
+import { BreadcrumbItemProps } from "../../../typings/ui/components/Breadcrumb";
 
 import arrow from "../../assets/arrow.svg";
 

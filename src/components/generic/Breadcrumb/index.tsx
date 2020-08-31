@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import BreadcrumbItem from "./BreadcrumbItem";
 
-import BreadcrumbProps from "../../typings/ui/components/Breadcrumb";
+import BreadcrumbProps from "../../../typings/ui/components/Breadcrumb";
 
 const Breadcrumb: FC<BreadcrumbProps> = ({ items = [] }: BreadcrumbProps) => {
   return (

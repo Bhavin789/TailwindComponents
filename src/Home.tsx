@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import Breadcrumb from "./components/Breadcrumb";
+import Breadcrumb from "./components/generic/Breadcrumb";
 
 import "./Home.css";
 
