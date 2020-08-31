@@ -7,7 +7,7 @@ import arrow from "../../assets/arrow.svg";
 
 const BreadcrumbItem: FC<BreadcrumbItemProps> = ({
   title,
-  hasArrow = true,
+  isLastItem = true,
   to,
 }) => {
   return (
@@ -18,7 +18,7 @@ const BreadcrumbItem: FC<BreadcrumbItemProps> = ({
       >
         {title}
       </Link>
-      {hasArrow && (
+      {!isLastItem && (
         <span className="flex-shrink-0 mx-2 h-5 w-5 text-gray-400">
           <svg viewBox="0 0 20 20" fill="currentColor">
             <path

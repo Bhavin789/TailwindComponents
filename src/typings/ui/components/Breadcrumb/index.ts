@@ -1,9 +1,14 @@
+export interface BreadcrumbItemData {
+  title: string;
+  to: string;
+}
+
 export interface BreadcrumbItemProps {
   title: string;
-  hasArrow?: boolean;
+  isLastItem?: boolean;
   to: string;
 }
 
 export default interface BreadcrumbProps {
-  items: BreadcrumbItemProps[];
+  items: BreadcrumbItemData[];
 }

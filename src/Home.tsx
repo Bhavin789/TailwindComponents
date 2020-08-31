@@ -5,7 +5,12 @@ import Breadcrumb from "./components/Breadcrumb";
 import "./Home.css";
 
 const Home: FC<{}> = () => {
-  return <Breadcrumb />;
+  const items = [
+    { title: "Home", to: "/" },
+    { title: "Profile", to: "/" },
+    { title: "About", to: "/" },
+  ];
+  return <Breadcrumb items={items} />;
 };
 
 export default Home;
