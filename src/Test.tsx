@@ -12,4 +12,4 @@ const Test: FC<{}> = () => {
   return <div> This is a test component</div>;
 };
 
-export default withBreadcrumbs<{}>({ component: Test, breadcrumbItems: items });
+export default withBreadcrumbs<{}>({ Component: Test, breadcrumbItems: items });

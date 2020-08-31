@@ -18,6 +18,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ items = [] }: BreadcrumbProps) => {
 
           return (
             <BreadcrumbItem
+              key={`breadcrumb-item-${title}-${index}`}
               title={title}
               to={toRoute}
               isLastItem={isLastItem}
