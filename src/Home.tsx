@@ -10,10 +10,9 @@ const Home: FC<{}> = () => {
     { title: "Profile", to: "/" },
     { title: "About", to: "/" },
   ];
-  // return <Breadcrumb items={items} />;
 
   return (
-    <div class="h-screen flex overflow-hidden bg-gray-100">
+    <div className="h-screen flex overflow-hidden bg-gray-100">
       <div className="hidden md:flex md:flex-shrink-0">
         <div className="flex flex-col w-64">
           <div className="flex flex-col h-0 flex-1">
