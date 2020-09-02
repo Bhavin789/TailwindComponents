@@ -6,11 +6,7 @@ import { BreadcrumbItemData } from "../../../../typings/ui/components/Breadcrumb
 
 const withBreadcrumbs = <T extends object>({
   Component,
-  breadcrumbItems = [
-    { title: "Dashboard", to: "/" },
-    { title: "Profile", to: "/" },
-    { title: "About", to: "/" },
-  ],
+  breadcrumbItems = [],
 }: {
   Component: FC<T>;
   breadcrumbItems: BreadcrumbItemData[];
